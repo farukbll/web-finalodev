@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <video autoplay muted loop playsinline class="video">
+            <source src="video/fotobaslikvideo.mp4" type="video/mp4">
+        </video>
+        <div class="metin">
+            <h1>Fotoğraf Galerisi</h1>
+        </div>
+    </header>
+    <nav class="ana-nav">
+            <ul>
+                <li><a href="anasayfa.html">Ana Sayfa</a></li>
+                <li><a href="#iletisim">İletişim</a></li>
+            </ul>
+    </nav>
+
+    <main>
+        <section class="galeri">
+            <div class="galeri-bilgi" onclick="openModal('tarihi-fotograflar')">Tarihi Fotoğraflar</div>
+            <div class="galeri-bilgi" onclick="openModal('gezilecek-yerler')">Gezilecek Yerler</div>
+            <div class="galeri-bilgi" onclick="openModal('yoresel-lezzetler')">Yöresel Lezzetler</div>
+            <div class="galeri-bilgi" onclick="openModal('ozel-deneyimler')">Özel Deneyimler</div>
+        </section>
+
+        <div id="tarihi-fotograflar" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal('tarihi-fotograflar')">&times;</span>
+                <h2>Tarihi Fotoğraflar</h2>
+                <div class="icerik-kutusu">
+                    <h3>Kyoto'nun Tarihi Görselleri</h3>
+                    <img src="resim/kyototarihi.png" alt="Kyoto Tarihi Yapay Zekayla" >
+                    <img src="resim/kyototarihi2.png" alt="Kyoto Tarihi Yapay Zekayla" >
+                    <img src="resim/giontarihi.png" alt="gion tarihi" >
+                </div>
+            </div>
+        </div>
+
+        <div id="gezilecek-yerler" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal('gezilecek-yerler')">&times;</span>
+                <h2>Gezilecek Yerler</h2>
+                <div class="alt-kutu" onclick="toggleAccordion('kinkaku')">Kinkaku-ji (Altın Pavyon)</div>
+                    <div id="kinkaku" class="icerik-bilgi">
+                        <img src="resim/depositphotos_218823034-stock-photo-kyoto-japan-kinkaku-temple-golden.jpg" alt="Altın Pavyon" >
+                </div>
+
+                <div class="alt-kutu" onclick="toggleAccordion('ginkaku')">Ginkaku-ji (Gümüş Pavyon)</div>
+                    <div id="ginkaku" class="icerik-bilgi">
+                        <img src="resim/ginkaku.png" alt="Gümüş Pavyon" >
+                        <img src="resim/ginkaku2.png" alt="Gümüş Pavyon" >
+                </div>
+
+                <div class="alt-kutu" onclick="toggleAccordion('fushimi')">Fushimi Inari Tapınağı</div>
+                    <div id="fushimi" class="icerik-bilgi">
+                        <img src="resim/fushimi.png" alt="Fushimi Inari" >
+                </div>
+
+                <div class="alt-kutu" onclick="toggleAccordion('gion')">Gion Mahallesi</div>
+                    <div id="gion" class="icerik-bilgi">
+                        <img src="resim/gion.png" alt="Gion Mahallesi" >
+                </div>
+
+                <div class="alt-kutu" onclick="toggleAccordion('kiyomizu')">Kiyomizu-dera Tapınağı</div>
+                    <div id="kiyomizu" class="icerik-bilgi">
+                        <img src="resim/kiyomizu.png" alt="Kiyomizu-dera Tapınağı" >
+                </div>
+
+                <div class="alt-kutu" onclick="toggleAccordion('bambu')">Arashiyama Bambu Ormanı</div>
+                    <div id="bambu" class="icerik-bilgi">
+                        <img src="resim/bambu.png" alt="Arashiyama Bambu Ormanı" >
+                </div>
+
+                <div class="alt-kutu" onclick="toggleAccordion('nijo')">Nijo Kalesi</div>
+                    <div id="nijo" class="icerik-bilgi">
+                        <img src="resim/nijo.png" alt="Nijo Kalesi" >
+                </div>
+            </div>
+        </div>
+
+        <div id="yoresel-lezzetler" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal('yoresel-lezzetler')">&times;</span>
+                <h2>Yöresel Lezzetler</h2>
+
+                <div class="alt-kutu" onclick="toggleAccordion('kaiseki')">Kaiseki Ryori</div>
+                    <div id="kaiseki" class="icerik-bilgi">
+                        <img src="resim/kaiseki.png" alt="Kaiseki Ryori" >
+                </div>
+                
+                <div class="alt-kutu" onclick="toggleAccordion('tofu')">Yudofu (Tofu Mutfağı)</div>
+                    <div id="tofu" class="icerik-bilgi">
+                        <img src="resim/tofu.png" alt="Yudofu (Tofu Mutfağı)" >
+                </div>
+
+                <div class="alt-kutu" onclick="toggleAccordion('ramen')">Kyoto Ramen</div>
+                    <div id="ramen" class="icerik-bilgi">
+                        <img src="resim/ramen.png" alt="Kyoto Ramen" >
+                </div>
+
+                <div class="alt-kutu" onclick="toggleAccordion('matcha')">Matcha ve Wagashi</div>
+                    <div id="matcha" class="icerik-bilgi">
+                        <img src="resim/matcha.png" alt="Matcha ve Wagashi" > 
+                </div>
+
+                <div class="alt-kutu" onclick="toggleAccordion('obanzai')">Obanzai</div>
+                    <div id="obanzai" class="icerik-bilgi">
+                        <img src="resim/obanzai.png" alt="Obanzai" >
+                </div>
+
+                <div class="alt-kutu" onclick="toggleAccordion('pickles')">Kyoto Pickles (Tsukemono)</div>
+                    <div id="pickles" class="icerik-bilgi">
+                        <img src="resim/pickles.png" alt="Kyoto Pickles" >
+                </div>
+
+                <div class="alt-kutu" onclick="toggleAccordion('kyo')">Kyo-gashi</div>
+                    <div id="kyo" class="icerik-bilgi">
+                        <img src="resim/kyo.png" alt="Kyo-gashi" >
+                </div>
+
+                <div class="alt-kutu" onclick="toggleAccordion('yuba')">Yuba</div>
+                    <div id="yuba" class="icerik-bilgi">
+                        <img src="resim/yuba.png" alt="Yuba">
+                </div>
+
+                <div class="alt-kutu" onclick="toggleAccordion('sake')">Sake</div>
+                    <div id="sake" class="icerik-bilgi">
+                        <img src="resim/sake.png" alt="Sake" >
+                </div>
+            </div>
+        </div>
+
+        <div id="ozel-deneyimler" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal('ozel-deneyimler')">&times;</span>
+                <h2>Özel Deneyimler</h2>
+
+                <div class="alt-kutu" onclick="toggleAccordion('cay')">Çay Töreni (Chado)</div>
+                    <div id="cay" class="icerik-bilgi">
+                     <img src="resim/cay.png" alt="Çay Töreni" >
+                </div>
+
+                <div class="alt-kutu" onclick="toggleAccordion('geisha')">Geisha Performansı</div>
+                    <div id="geisha" class="icerik-bilgi">
+                        <img src="resim/geisha.png" alt="Geisha Performansı" >
+                </div>
+
+                <div class="alt-kutu" onclick="toggleAccordion('tapinak')">Tapınak Konaklama</div>
+                    <div id="tapinak" class="icerik-bilgi">
+                        <img src="resim/tapinak.png" alt="Tapınak Konaklama">
+                </div>
+
+                <div class="alt-kutu" onclick="toggleAccordion('zen')">Zen Meditasyonu</div>
+                    <div id="zen" class="icerik-bilgi">
+                        <img src="resim/zen.png" alt="Zen Meditasyonu" >
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <section id="iletisim">
+            <h2 class="footer-baslik">İletişim</h2>
+            <nav class="footer-nav">
+                <ul>
+                    <li>
+                        <i class="fas fa-phone"></i> 0(555) 000 00 00
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i> kyoto@iletisim.com
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i> Adres: Adana/TÜRKİYE
+                    </li>
+                    <li>
+                        <i class="fab fa-github"></i> Github: 
+                        <a href="https://github.com/farukbll" target="_blank" style="color: #8b4513;"> @farukbll</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+        <div class="telif">
+            <p>&copy; 2025 Tüm Telif Hakları Saklıdır.</p>
+        </div>           
+    </footer>
+
+    <script src="script.js">
+        
+        
+       
+    </script>
+</body>
+</html>

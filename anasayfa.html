@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyoto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="harita">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d417835.64227443415!2d135.71886944999997!3d35.09819619999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a8d6cd3cc3f1%3A0xc0961d366bbb1d3d!2sKyoto%2C%20Japonya!5e0!3m2!1str!2str!4v1748398384185!5m2!1str!2str" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <div class="metin">
+            <h1 >KYOTO</h1>
+            <p >Japonya'nın Kültürel Kalbi </p>
+        </div>
+    </header>
+    
+
+    <nav class="ana-nav">
+        <ul>
+            <li><a href="#tarih">Tarih</a></li>
+            <li><a href="#yer">Gezilecek Yerler</a></li>
+            <li><a href="#yemek">Yöresel Lezzetler</a></li>
+            <li><a href="#deneyim">Özel Deneyimler</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="#destek">Bildirim Kutusu</a></li>
+            <li><a href="#havadurumu">Hava Durumu</a></li>
+            <li><a href="#iletisim">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section id="tarih" class="tarih-icerik">
+            <h2 class="section-baslik">Kyoto Tarihi</h2>
+            <div class="kutu-grid">
+
+                <div class="kutu">
+                    <h3>Kuruluş Dönemi (794-1185)</h3>
+                    <p>Kyoto, 794 yılında Heian-kyō adıyla Japonya'nın başkenti olarak kuruldu. 
+                        Çin'in Chang'an şehrinden esinlenerek planlanan şehir, 1000 yıldan fazla imparatorluk başkenti olarak kaldı. 
+                        Bu dönemde aristokrat kültürü, edebiyat ve sanat doruk noktasına ulaştı.</p>
+                </div>
+
+                <div class="kutu">
+                    <h3>Samurai Dönemi (1185-1868)</h3>
+                    <p>Kamakura ve Muromachi dönemlerinde siyasi güç samuraylara geçse de Kyoto kültürel merkez olmaya devam etti. 
+                        Bu dönemde Zen Budizmi yaygınlaştı, çay töreni gelişti ve birçok ünlü tapınak inşa edildi.</p>
+                </div>
+
+                <div class="kutu">
+                    <h3>Modern Dönem</h3>
+                    <p>1868'de başkent Tokyo'ya taşınsa da Kyoto geleneksel Japon kültürünün kalbi olmaya devam etti. 
+                        2. Dünya Savaşı'nda bombalanmaktan son anda kurtuldu ve bugün 2000'den fazla tapınak ve türbeyle UNESCO Dünya Mirası Listesi'nde yer alıyor.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="yer">
+            <h2 class="section-baslik">Gezilecek Yerler</h2>
+            <div class="kutu-grid">
+
+                <div class="kutu">
+                    <h3>Kinkaku-ji (Altın Pavyon)</h3>
+                    <p>1397'de inşa edilmiş ve tamamen altın varakla kaplı olan bu Zen tapınağı, göl üzerindeki yansımasıyla ünlüdür ve Kyoto'nun en çok fotoğraflanan yerlerinden biridir.</p>
+                    <button class="video-btn" onclick="videoAc('video/kinkaku.mp4')">🎥 Video</button>
+                </div>
+
+                <div class="kutu">
+                    <h3>Ginkaku-ji (Gümüş Pavyon)</h3>
+                    <p>1482'de inşa edilmiş zarif bir villadır ve Japon bahçe sanatının en güzel örneklerinden biridir. Aynı zamanda, ünlü "Filozof Yolu"nun başlangıç noktasıdır.</p>
+                    <button class="video-btn" onclick="videoAc('video/gumus.mp4')">🎥 Video</button>
+                </div>
+
+                <div class="kutu">
+                    <h3>Fushimi Inari Taisha</h3>
+                    <p>Binlerce kırmızı torii kapısıyla dikkat çeker; İnari (pirinç tanrısı) adına yapılmış olan bu tapınak, dağın zirvesine kadar uzanan 2-3 saatlik bir yürüyüş sunar.</p>
+                    <button class="video-btn" onclick="videoAc('video/fushimi.mp4')">🎥 Video</button>
+                </div>
+
+                <div class="kutu">
+                    <h3>Gion Mahallesi</h3>
+                    <p>Gion Mahallesi, geleneksel geisha ve maiko kültürünün yaşadığı tarihi bir bölgedir. Dar sokakları, ahşap evleri ve çay evleriyle ünlü olan bu mahallede akşam saatlerinde geishalarla karşılaşma şansı vardır.</p>
+                    <button class="video-btn" onclick="videoAc('video/gion.mp4')">🎥 Video</button>
+                </div>
+
+                <div class="kutu">
+                    <h3>Kiyomizu-dera Tapınağı</h3>
+                    <p>780 yılında kurulmuş olup, ahşap platformundan Kyoto'nun panoramik manzarasını sunar; özellikle sakura ve sonbahar yaprakları döneminde büyüleyici bir atmosfere sahiptir.</p>
+                    <button class="video-btn" onclick="videoAc('video/dera.mp4')">🎥 Video</button>
+                </div>
+
+                <div class="kutu">
+                    <h3>Arashiyama Bambu Ormanı</h3>
+                    <p>Doğal bambu koridorları ve rüzgârın bambular arasında çıkardığı huzur verici sesiyle ünlüdür. Ayrıca, Tenryu-ji Tapınağı'na yakın konumuyla ziyaretçilere keyifli bir gezi imkânı sunar.</p>
+                    <button class="video-btn" onclick="videoAc('video/bambu.mp4')">🎥 Video</button>
+                </div>
+
+                <div class="kutu">
+                    <h3>Nijo Kalesi</h3>
+                    <p>Tokugawa şogunlarının ikametgâhı olarak kullanılmıştır; "bülbül zeminleri" adı verilen gıcırdayan koruma sistemi ve muhteşem duvar resimleriyle dikkat çeker.</p>
+                    <button class="video-btn" onclick="videoAc('video/nijo.mp4')">🎥 Video</button>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="yemek">
+            <h2 class="section-baslik">Yöresel Lezzetler</h2>
+            <h4>"Kyoto mutfağı, Japonya'nın en rafine yemek kültürlerinden birine sahiptir."</h4>
+            <div class="kutu-grid">
+
+                <div class="kutu">
+                    <h3>Kaiseki Ryori</h3>
+                    <p>Mevsimsel malzemelerle hazırlanan çok kurslu bir yemektir ve sunumu kadar lezzeti de önemlidir. Fiyatları 100-500$ arasında değişen bu deneyim, Kyoto'nun en özel lezzetlerindendir.</p>
+                    <button class="video-btn" onclick="videoAc('video/kaiseki.mp4')">🎥 Video</button>
+                </div>
+
+                <div class="kutu">
+                    <h3>Yudofu (Tofu Mutfağı)</h3>
+                    <p>Budist tapınaklarından gelen bir gelenektir; sıcak suda pişirilen ipeksi tofu, kombu suyu ile servis edilir ve özellikle Arashiyama bölgesindeki restoranlarda tadılabilir.</p>
+                    <button class="video-btn" onclick="videoAc('video/tofu.mp4')">🎥 Video</button>
+                </div>
+
+                <div class="kutu">
+                    <h3>Kyoto Ramen</h3>
+                    <p>Kyoto'ya özgü Kyoto Ramen, diğer şehirlerdekinden farklı olarak daha hafif ve tavuk-sebze bazlı berrak bir çorbaya sahiptir.</p>
+                    <button class="video-btn" onclick="videoAc('video/ramen.mp4')">🎥 Video</button>
+                </div>
+
+                <div class="kutu">
+                    <h3>Matcha ve Wagashi</h3>
+                    <p>Kyoto'nun vazgeçilmez ikilisidir; Uji bölgesi en kaliteli matcha çayının üretildiği yerdir ve wagashi adı verilen geleneksel tatlılarla birlikte servis edilir. Ayrıca, bir çay töreni deneyimi yaşamak Kyoto'da yapılacak en özel aktivitelerden biridir.</p>
+                    <button class="video-btn" onclick="videoAc('video/matcha.mp4')">🎥 Video</button>
+                </div>
+
+                <div class="kutu">
+                    <h3>Obanzai</h3>
+                    <p>Kyoto'nun ev yemeği tarzıdır; mevsimsel, basit ve sağlıklı malzemelerle hazırlanan küçük porsiyonlardan oluşur.</p>
+                    <button class="video-btn" onclick="videoAc('video/obanzi.mp4')">🎥 Video</button>
+                </div>
+
+                <div class="kutu">
+                    <h3>Kyoto Pickles (Tsukemono)</h3>
+                    <p>Kyoto Pickles turp, lahana ve çeşitli sebzelerden oluşan turşularıdır.</p>
+                    <button class="video-btn" onclick="videoAc('video/pickles.mp4')">🎥 Video</button>
+                </div>
+
+                <div class="kutu">
+                    <h3>Kyo-gashi</h3>
+                    <p>El yapımı geleneksel şekerlemelerdir ve çay törenleri için özel olarak üretilir.</p>
+                    <button class="video-btn" onclick="videoAc('video/kyo.mp4')">🎥 Video</button>
+                </div>
+
+                <div class="kutu">
+                    <h3>Yuba</h3>
+                    <p>soya sütünden elde edilen ince bir tabakadır ve protein açısından zengindir; çorbalarda ve sushi'de kullanılır.</p>
+                    <button class="video-btn" onclick="videoAc('video/yuba.mp4')">🎥 Video</button>
+                </div>
+
+                <div class="kutu">
+                    <h3>Sake</h3>
+                    <p>Sake, pirinçten fermente edilen geleneksel bir Japon içkisidir. Kyoto sake üretimiyle de ünlüdür; Fushimi bölgesinde 100'den fazla sake üreticisi bulunur ve sake tadım turları yapılabilir.</p>
+                    <button class="video-btn" onclick="videoAc('video/sake.mp4')">🎥 Video</button>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="deneyim">
+            <h2 class="section-baslik">Özel Deneyimler</h2>
+            <h4>"Kyoto, geleneksel Japon kültürünü yaşamak isteyenler için birçok özel deneyim sunar."</h4>
+            <div class="kutu-grid">
+                <div class="kutu">
+                    <h3>Çay Töreni (Chado)</h3>
+                    <p>Japon kültüründe matcha çayının belirli bir ritüelle hazırlanıp sunulduğu geleneksel bir seremonidir.</p>
+                    <button class="video-btn" onclick="videoAc('video/cay.mp4')">🎥 Video</button>
+                </div>
+
+                <div class="kutu">
+                    <h3>Geisha Performansı</h3>
+                    <p>Geleneksel Japon sanatlarının (şarkı, dans, müzik) geishalar tarafından özenle sergilendiği zarif bir gösteridir.</p>
+                    <button class="video-btn" onclick="videoAc('video/geisha.mp4')">🎥 Video</button>
+                </div>
+
+                <div class="kutu">
+                    <h3>Tapınak Konaklama</h3>
+                    <p>Koyasan'da keşişlerle birlikte kalarak Budist yaşam tarzını deneyimleme fırsatı verir.</p>
+                    
+                </div>
+
+                <div class="kutu">
+                    <h3>Zen Meditasyonu</h3>
+                    <p>Tapınaklarda rehberli seanslarla yapılabilir ve zihinsel dinginlik sağlar.</p>
+                    <button class="video-btn" onclick="videoAc('video/zen.mp4')">🎥 Video</button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="destek">
+            <h2 class="section-baslik">Geri Bildirim</h2>
+            <h4>Geri Bildirim Yaparak Bize Destek Olabilirsiniz</h4>
+            <div class="destek-form">
+                <form id="destek-form">
+
+                    <div class="grup-form">
+                        <label for="isim">Ad Soyad:</label>
+                        <input type="text" id="isim" name="isim" placeholder="Ad soyad Giriniz..." required>
+                    </div>
+
+                    <div class="grup-form">
+                        <label for="email"><i class="fas fa-envelope"></i> E-posta:</label>
+                        <input type="email" id="email" name="email" placeholder="E-posta Giriniz..." required>
+                    </div>
+
+                    <div class="grup-form">
+                        <label for="telefon"><i class="fas fa-phone"></i> Telefon:</label>
+                        <input type="tel" id="telefon" name="telefon" placeholder="(5__) ___ ____" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" required> 
+                    </div>
+
+                    <div class="grup-form">
+                        <label for="date"><i class="far fa-calendar-alt"></i> Tarih:</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+
+                    <div class="grup-form">
+                        <label for="message"><i class="fas fa-comment-dots"></i> Mesajınız:</label>
+                        <textarea id="message" name="message" rows="5" placeholder="İsteklerinizi ve bildirimlerinizi buraya yazabilirsiniz..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">Geri Bildirim Oluştur</button>
+                    <button type="reset" class="btn" style="margin-left: 1rem;">Temizle</button>
+                </form>
+            </div>
+            
+            <div id="geriBildirimKutusu">
+                <h3>Bildirimler</h3>
+                <div id="geriBildirimListesi"></div>
+                <button id="bildirimTemizle" class="btn" style="margin-top: 1rem;">Bildirimleri Temizle</button>
+            </div>
+        </section>
+
+        <section id="havadurumu">
+            <h2 class="section-baslik">Kyoto Anlık Hava Durumu</h2>
+            <div id="hava-bilgi-kutusu" class="hava-kutu">
+                <p>Yükleniyor</p>
+            </div>
+            <div style="text-align:center; margin-top: 1rem;">
+                <button onclick="havaDurumuGetir()" class="btn"> Güncelle</button>
+            </div>
+        </section>
+
+        <div class="video-modal" id="videoModal">
+                <div class="video-icerik">
+                    <span class="kapat" onclick="videoKapat()">×</span>
+                        <video id="modalVideo" controls autoplay>
+                            <source src="" type="video/mp4">
+                        </video>
+                </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <section id="iletisim">
+            <h2 class="footer-baslik">İletişim</h2>
+            <nav class="footer-nav">
+                <ul>
+                    <li>
+                        <i class="fas fa-phone"></i> 0(555) 000 00 00
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i> kyoto@iletisim.com
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i> Adres: Adana/TÜRKİYE
+                    </li>
+                    <li>
+                        <i class="fab fa-github"></i> Github: 
+                        <a href="https://github.com/farukbll" target="_blank" style="color: #8b4513;"> @farukbll</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <div class="telif">
+            <p>&copy; 2025 Tüm Telif Hakları Saklıdır.</p>
+        </div>           
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
